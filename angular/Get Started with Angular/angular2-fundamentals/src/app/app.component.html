@@ -4,22 +4,19 @@
 <!--==============================================-->
 {{mail.message}}
 {{mail2.message}}
-<br>
 <!--==============================================-->
 {{api}}
-<br>
 <!--==============================================-->
 <ul>
   <li *ngFor="let message of mail.unreadMessages">
     {{message.text}}
   </li>
 </ul>
-<br>
 <!--==============================================-->
 <app-simple-form
   *ngFor="let message of mail.unreadMessages"
   [message]="message.text"
-  (update)="onUpdate($event)"
+  (update)="onUpdate(message.id, $event)"
 >
 </app-simple-form>
 {{data}}

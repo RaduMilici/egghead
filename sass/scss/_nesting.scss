@@ -1,0 +1,15 @@
+.manson {
+  padding: 1rem 2rem;
+  transition: transform 1s ease-in-out;
+
+  &-container { background-color: yellow; }
+  &-container:hover & { transform: rotate(360deg); }
+
+  img {
+    border: 1px solid red;
+    height: 300px;
+    transition: transform 1s ease-in-out;
+
+    &:hover { transform: rotate(360deg); }
+  }
+}

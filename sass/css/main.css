@@ -1,0 +1,22 @@
+.red {
+  color: red; }
+
+.red-dark {
+  color: #990000; }
+
+.blue {
+  color: yellow; }
+
+.manson {
+  padding: 1rem 2rem;
+  transition: transform 1s ease-in-out; }
+  .manson-container {
+    background-color: yellow; }
+  .manson-container:hover .manson {
+    transform: rotate(360deg); }
+  .manson img {
+    border: 1px solid red;
+    height: 300px;
+    transition: transform 1s ease-in-out; }
+    .manson img:hover {
+      transform: rotate(360deg); }
